@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reserve Rooms At New Royal Palace With Effortlessly">
+    <meta name="author" content="Azora ads">
+    <title>New Royal Palace - Coming Soon</title>
+   
+
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bs-icon-font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/vendors.min.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/mystyles.css">
+
+    
+  </head>
+  <body class="datepicker_mobile_full" style="height: 100%; overflow:hidden;">
+
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div><!-- /Page Preload -->
+
+    <div class="min-vh-100 d-flex flex-column" id="main">
+        <div class="container" style="width:100vw;">
+            <div style="display:block; margin:10px auto;"><img src="/myimages/logo.png" alt="" height="70" style="width: 100%; object-fit:contain; filter:grayscale(1)"></div>
+        </div>
+        <div style="position:absolute; width: 100vw; height:100%; display:flex; justify-content:center; align-items:center;">
+            <div class="container">
+                <div>
+                    <div class="col-md-12">
+                        <h1>We will be back Soon!</h1>
+                        <h2>Meanwhile, you can request <br> for a reservation</h2>
+                    </div>
+                </div>
+                <div id="book">
+                    <form id="check_avail" autocomplete="off">
+                        <div class="row">
+                            <div class="col-md-4 first-nogutter position-relative">
+                                <input type="text" class=" form-control" id="dates" name="dates" placeholder="Check in / Check out">
+                                <span class="input-icon"><i class="bi bi-calendar2"></i></span>
+                            </div>
+                            <div class="col-md-3 nogutter position-relative">
+                                <input type="text" class=" form-control" id="name" name="from_name" placeholder="Name">
+                                <span class="input-icon"><i class="bi bi-people"></i></span>
+                            </div>
+                            <div class="col-md-3 nogutter position-relative">
+                                <input type="text" class=" form-control" id="email" name="to_name" placeholder="Email">
+                                <span class="input-icon"><i class="bi bi-envelope"></i></span>
+                            </div>
+                            <div class="col-md-1 nogutter position-relative">
+                                <div class="qty-buttons">
+                                    <input type="button" value="+" class="qtyplus" name="quantity">
+                                    <input type="number" name="quantity" id="quantity" value="" class="qty form-control required" placeholder="Guest">
+                                    <input type="button" value="-" class="qtyminus" name="quantity">
+                                </div>
+                            </div>
+                            <div class="col-md-1 ps-0 pe-3">
+                                <button onclick="validate(event)" class="btn_check" id="submit-check">Book</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="message-booking"></div>
+                </div><!-- End book -->
+            </div>
+        </div>
+        
+        <!-- End main_content -->
+        <div class="container-fluid p-0 mt-5" style="position: fixed; bottom:0;">
+            <nav class="clearfix">
+                <ul class="menu">
+                    <li><a href="tel:+971506992551">Call</a></li>
+                    <li><a href="mailto:newroyalapartments@gmail.com">Email</a></li>
+                    <li><a href="#" id="modal-contacts-open">Location</a></li>
+                </ul>
+                <ul id="contact_follow">
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="/en-us/" class="lang lang-active" >En</a><span style="font-size: 13px;"> / </span><a href="/ar/" class="lang">Ar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End main -->
+
+    <!-- Modal Latest Offers -->
+    
+
+    <!-- Modal  Contacts -->
+    <div id="modal-contacts">
+        <a href="#" class="modal-close"><i class="bi bi-x"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section_title">Location</h2>
+                    <div class="map_iframe mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.2904613840515!2d55.4731513!3d25.3950861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5814c9ba60a3%3A0x5690c23cb7a53f65!2sNew%20Royal%20Palace%20Apartments%20%2C%20Ajman!5e0!3m2!1sen!2sin!4v1699032860816!5m2!1sen!2sin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <ul id="contact_info">
+                        <li>Mushairif - Al Ittihad St - next to ADIB bank - Meshairef - Ajman - United Arab Emirates</li>
+                        <li>+971 50699 2551</li>
+                        <li><a href="mailto:newroyalapartments@gmail.com">newroyalapartments@gmail.com</a>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- End conainer -->
+    </div><!-- End modal -->
+   
+	<div id="slides">
+		<ul class="slides-container">
+			<li><img src="/img/slide_1.jpg" alt=""></li>
+			<li><img src="/img/slide_2.jpg" alt=""></li>
+			<li><img src="/img/slide_3.jpg" alt=""></li>
+		</ul>
+	</div><!-- End background slider -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="/js/jquery-3.7.0.min.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/jquery.easing.1.3.min.js"></script>
+	<script src="/js/jquery.superslides.min.js"></script>
+	<script>
+    $(function() {
+        "use strict";
+    	$('#slides').superslides({
+    	    play: 5000,
+    	    pagination: false,
+    	    animation_speed: 800,
+    	    animation: 'fade'
+    	});
+    });
+	</script>
+	<script src="/js/moment.min.js"></script>
+	<script src="/js/daterangepicker.js"></script>
+	<script src="/js/owl-carousel.js"></script>
+	<script src="/js/fslightbox.js"></script>
+	<script src="/js/functions.js"></script>
+    
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('qIfVT5f7D6xd5tuEB')
+  </script>	
+  <script src="/phpmailer/validate.js"></script>
+
+  </body>
+
+</html>
