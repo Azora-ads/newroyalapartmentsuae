@@ -1,0 +1,35 @@
+.lang{
+    color: aliceblue;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    transition: all 0.2s ease-in;
+}
+.lang-active{
+    color: aqua !important;
+}
+.lang:hover{
+    color: aqua !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.daterangepicker{
+    width: fit-content !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(-50%);
+}
+.daterangepicker:after{
+    display: none;
+}
+.daterangepicker:before{
+    display: none;
+}
+@media screen and (max-width:570px) {
+    .daterangepicker{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(0) translateY(0);
+    }
+}
